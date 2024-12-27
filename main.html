@@ -3,42 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Table</title>
+    <title>HTML Assignment 3</title>
     <style>
         table {
-            width: 50%;
-            border-collapse: collapse;
-            margin: 20px auto;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        th, td {
             border: 1px solid black;
-            padding: 10px;
+            border-spacing: 1px;
+            border-collapse: collapse;
         }
-        th {
-            background-color: #f2f2f2;
+        td, th {
+            border: 1px solid black;
+            padding: 1px;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
         }
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Roll Number</th>
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>John Doe</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Jane Smith</td>
-            </tr>
-        </tbody>
+    <h1 style="text-align: center;">HTML Assignment #3</h1>
+
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">T11</td>
+            <td id="t12">T12</td>
+            <td id="t13" class="right">T13</td>
+        </tr>
+        <tr class="center">
+            <td class="center">Row 2 Col 1</td>
+            <td class="center">Row 2 Col 2</td>
+            <td class="center right">Row 2 Col 3</td>
+        </tr>
+        <tr>
+            <td>Row 3 Col 1</td>
+            <td>Row 3 Col 2</td>
+            <td class="right">Row 3 Col 3</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6">Header spanning 6 columns</td>
+        </tr>
+        <tr>
+            <td>R2C1</td>
+            <td>R2C2</td>
+            <td>R2C3</td>
+            <td>R2C4</td>
+            <td>R2C5</td>
+            <td>R2C6</td>
+        </tr>
+        <tr>
+            <td>R3C1</td>
+            <td>R3C2</td>
+            <td>R3C3</td>
+            <td>R3C4</td>
+            <td>R3C5</td>
+            <td>R3C6</td>
+        </tr>
+        <tr>
+            <td>R4C1</td>
+            <td>R4C2</td>
+            <td>R4C3</td>
+            <td>R4C4</td>
+            <td>R4C5</td>
+            <td>R4C6</td>
+        </tr>
+        <tr>
+            <td>R5C1</td>
+            <td>R5C2</td>
+            <td>R5C3</td>
+            <td>R5C4</td>
+            <td>R5C5</td>
+            <td>R5C6</td>
+        </tr>
+        <tr>
+            <td>R6C1</td>
+            <td>R6C2</td>
+            <td>R6C3</td>
+            <td>R6C4</td>
+            <td>R6C5</td>
+            <td>R6C6</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Table 3 -->
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td>R1C1</td>
+            <td>R1C2</td>
+            <td>R1C3</td>
+        </tr>
+        <tr>
+            <td>R2C1</td>
+            <td id="t-image"><img src="https://via.placeholder.com/100" alt="Sample Image"></td>
+            <td>R2C3</td>
+        </tr>
+        <tr class="blue">
+            <td>R3C1</td>
+            <td>R3C2</td>
+            <td>R3C3</td>
+        </tr>
     </table>
 </body>
 </html>
